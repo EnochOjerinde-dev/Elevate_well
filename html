@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevateWell Coaching — Unlock Clarity. Build Confidence. Elevate Your Life.</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Fonts: Lora (Headings), Inter (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Font Setup */
+        :root {
+            --color-primary: #8B5CF6; /* Violet-500 */
+            --color-secondary: #6366F1; /* Indigo-500 */
+            --color-accent: #FBBF24; /* Amber-400 */
+        }
+        .font-lora { font-family: 'Lora', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+
+        /* Custom, Handcrafted CSS for Dynamics */
+        .premium-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 5px 15px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .premium-shadow:hover {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 10px 25px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+        .cta-button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.4);
+        }
+        /* Scroll Transition Classes */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Hero Gradient Background */
+        .hero-bg-gradient {
+            background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 50%, #f7f3ff 100%);
+        }
+        /* Custom Subtle Animated Shapes */
+        @keyframes subtleMove {
+            0% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+            50% { transform: translate(10px, -10px) scale(1.05); opacity: 0.6; }
+            100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+        }
+        .animated-shape {
+            animation: subtleMove 15s infinite alternate ease-in-out;
+            filter: blur(50px);
+        }
+    </style>
+</head>
+<body class="font-inter text-gray-800 bg-white antialiased">
+
+    <!-- Header & Navigation (Simple for a landing page) -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="font-lora text-xl font-bold text-violet-700 tracking-wider">ElevateWell</a>
+            <nav class="hidden sm:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-violet-600 transition duration-150">The Coach</a>
+                <a href="#programs" class="hover:text-violet-600 transition duration-150">Programs</a>
+                <a href="#testimonials" class="hover:text-violet-600 transition duration-150">Success</a>
+            </nav>
+            <a href="#booking" class="bg-violet-600 hover:bg-violet-700 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300 shadow-lg shadow-violet-300/50">Consultation</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-bg-gradient relative overflow-hidden pt-20 pb-28 md:pt-32 md:pb-40">
+            <!-- Animated Shapes (Decorative) -->
+            <div class="absolute inset-0 z-0 opacity-50">
+                <div class="animated-shape absolute top-1/4 left-1/4 w-40 h-40 bg-indigo-300 rounded-full" style="animation-delay: 1s;"></div>
+                <div class="animated-shape absolute bottom-1/3 right-1/4 w-60 h-60 bg-purple-300 rounded-full" style="animation-delay: 5s;"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center scroll-reveal">
+                <h1 class="font-lora text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    Unlock Clarity. Build Confidence. <span class="text-violet-600">Elevate Your Life.</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-xl text-gray-600 mb-10">
+                    Personalized mindset coaching for busy professionals who want to overcome mental barriers, gain direction, and transform their lives from the inside out.
+                </p>
+                <a href="#booking" class="cta-button inline-block bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold py-4 px-8 rounded-full text-lg shadow-xl hover:shadow-2xl transition duration-300">
+                    Book a Free Consultation
+                </a>
+                <p class="mt-4 text-sm text-gray-500 italic">
+                    Your breakthrough starts with one conversation.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. About Section – “Meet the Coach” -->
+        <section id="about" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Coach Image Placeholder -->
+                <div class="relative w-full h-80 md:h-96 rounded-3xl overflow-hidden premium-shadow scroll-reveal" style="transition-delay: 0.1s;">
+                    <!-- Placeholder Image (replace with a real photo) -->
+                    <img src="https://placehold.co/800x960/6366F1/ffffff?text=Danielle+Rivers%0ACoach" 
+                         alt="Danielle Rivers, founder of ElevateWell Coaching" 
+                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x960/6366F1/ffffff?text=Coach+Photo';">
+                    <!-- Subtle overlay text -->
+                    <div class="absolute bottom-4 left-4 text-white text-xl font-lora font-semibold bg-black/30 p-2 rounded-lg">Coach Danielle</div>
+                </div>
+
+                <!-- About Text -->
+                <div class="scroll-reveal" style="transition-delay: 0.3s;">
+                    <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-6">
+                        Meet Coach Danielle — Your Partner in Growth
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Hi, I’m Danielle Rivers, founder of ElevateWell Coaching — a mindset and personal development coaching practice based in Miami, Florida. For the past 7 years, I’ve helped busy professionals and high-achievers break through self-doubt, overcome limiting beliefs, and step confidently into the life they’re meant to live.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        My approach blends psychology-backed coaching, structured clarity frameworks, and practical life tools so you can grow with intention — not overwhelm. I believe every person has untapped potential. My job is to help you access yours.
+                    </p>
+                    <p class="font-lora text-xl italic font-semibold text-violet-600 border-l-4 border-violet-400 pl-4 py-1">
+                        "You don’t need a new life — you just need a new mindset."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Values / Approach Section -->
+        <section id="values" class="py-20 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-12 scroll-reveal">
+                    Our Foundation: A Compassionate Approach
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    
+                    <!-- Value Card 1 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg scroll-reveal" style="transition-delay: 0.1s;">
+                        <span class="text-5xl text-amber-500 mb-3" role="img" aria-label="Heart icon">🧠</span>
+                        <h3 class="font-lora text-xl font-semibold mb-2">Psychology-Based</h3>
+                        <p class="text-sm text-gray-600">Practical, science-backed tools for real change.</p>
+                    </div>
+
+                    <!-- Value Card 2 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg scroll-reveal" style="transition-delay: 0.2s;">
+                        <span class="text-5xl text-indigo-500 mb-3" role="img" aria-label="Lock icon">🔒</span>
+                        <h3 class="font-lora text-xl font-semibold mb-2">Confidential</h3>
+                        <p class="text-sm text-gray-600">Safe, non-judgmental, and private conversations.</p>
+                    </div>
+
+                    <!-- Value Card 3 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg scroll-reveal" style="transition-delay: 0.3s;">
+                        <span class="text-5xl text-violet-500 mb-3" role="img" aria-label="Compass icon">🎯</span>
+                        <h3 class="font-lora text-xl font-semibold mb-2">Focused Clarity</h3>
+                        <p class="text-sm text-gray-600">Structured frameworks to gain immediate direction.</p>
+                    </div>
+
+                    <!-- Value Card 4 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg scroll-reveal" style="transition-delay: 0.4s;">
+                        <span class="text-5xl text-green-500 mb-3" role="img" aria-label="Sparkle icon">✨</span>
+                        <h3 class="font-lora text-xl font-semibold mb-2">Real Transformation</h3>
+                        <p class="text-sm text-gray-600">Results-driven commitment, zero fluff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Coaching Programs Section -->
+        <section id="programs" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-4 scroll-reveal">
+                    Coaching Programs Designed to Elevate You
+                </h2>
+                <p class="text-lg text-gray-600 mb-12 scroll-reveal" style="transition-delay: 0.1s;">
+                    Small shifts create big changes — let’s start yours.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Program Card 1: Clarity Breakthrough -->
+                    <a href="#booking" class="group block text-left bg-white rounded-2xl p-8 border border-gray-100 premium-shadow hover:ring-2 hover:ring-violet-500/50 scroll-reveal" style="transition-delay: 0.2s;">
+                        <h3 class="font-lora text-2xl font-bold text-gray-900 mb-3 transition duration-300 group-hover:text-violet-600">
+                            Clarity Breakthrough Session
+                        </h3>
+                        <p class="text-sm text-amber-500 font-semibold mb-4">60-MINUTE FOCUS</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>Identify immediate mental blocks.</li>
+                            <li>Gain a singular, actionable goal.</li>
+                            <li>Perfect for jumpstarting a tough decision.</li>
+                        </ul>
+                        <div class="mt-6 text-violet-600 font-semibold flex items-center">
+                            Explore Session 
+                            <svg class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </a>
+
+                    <!-- Program Card 2: 6-Week Mindset Reset -->
+                    <a href="#booking" class="group block text-left bg-white rounded-2xl p-8 border border-gray-100 premium-shadow hover:ring-2 hover:ring-violet-500/50 scroll-reveal" style="transition-delay: 0.3s;">
+                        <h3 class="font-lora text-2xl font-bold text-gray-900 mb-3 transition duration-300 group-hover:text-violet-600">
+                            6-Week Mindset Reset Program
+                        </h3>
+                        <p class="text-sm text-indigo-500 font-semibold mb-4">STRUCTURED TRANSFORMATION</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>Weekly 1-on-1 coaching sessions.</li>
+                            <li>Personalized tools and frameworks.</li>
+                            <li>Focus on breaking limiting beliefs.</li>
+                        </ul>
+                        <div class="mt-6 text-violet-600 font-semibold flex items-center">
+                            Explore Program 
+                            <svg class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </a>
+
+                    <!-- Program Card 3: ElevateWell Growth Experience -->
+                    <a href="#booking" class="group block text-left bg-white rounded-2xl p-8 border border-gray-100 premium-shadow hover:ring-2 hover:ring-violet-500/50 scroll-reveal" style="transition-delay: 0.4s;">
+                        <h3 class="font-lora text-2xl font-bold text-gray-900 mb-3 transition duration-300 group-hover:text-violet-600">
+                            ElevateWell Growth Experience
+                        </h3>
+                        <p class="text-sm text-violet-500 font-semibold mb-4">12-WEEK DEEP JOURNEY</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>Deep mindset shifts and emotional clarity.</li>
+                            <li>Comprehensive confidence strategies.</li>
+                            <li>Full accountability for 3 months.</li>
+                        </ul>
+                        <div class="mt-6 text-violet-600 font-semibold flex items-center">
+                            Explore Experience 
+                            <svg class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Lead Magnet / Optional Section -->
+        <section id="lead-magnet" class="py-20 bg-indigo-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+                
+                <!-- Mockup Image Placeholder -->
+                <div class="w-2/3 mx-auto md:w-full scroll-reveal">
+                    <!-- Placeholder for an eBook cover mockup -->
+                    <img src="https://placehold.co/500x700/8B5CF6/ffffff?text=eBook+Cover%0A5+Mindset+Shifts" 
+                         alt="Ebook cover mockup for 5 Mindset Shifts for Instant Clarity" 
+                         class="rounded-xl shadow-2xl rotate-3 transform transition duration-500 hover:rotate-0" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/500x700/8B5CF6/ffffff?text=Free+Guide';">
+                </div>
+
+                <!-- Lead Magnet Content -->
+                <div class="scroll-reveal" style="transition-delay: 0.1s;">
+                    <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-4">
+                        Instant Clarity: Get Our Free Guide
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Download Your Free Guide: <span class="font-semibold text-violet-700">5 Mindset Shifts for Instant Clarity.</span>
+                        Learn the quick, powerful changes you can make today to feel more focused and in control.
+                    </p>
+                    <form onsubmit="event.preventDefault(); document.getElementById('magnet-msg').textContent='Thank you! Your guide is on its way.'; setTimeout(() => document.getElementById('magnet-msg').textContent='', 3000);" class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your best email" required class="flex-grow p-3 rounded-xl border border-gray-300 focus:ring-violet-500 focus:border-violet-500 shadow-inner">
+                        <button type="submit" class="cta-button bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300">
+                            Download Now
+                        </button>
+                    </form>
+                    <p id="magnet-msg" class="mt-3 text-sm text-gray-600 italic">No credit card needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-12 scroll-reveal">
+                    What Clients Are Saying
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial Card 1 -->
+                    <div class="text-left bg-gray-50 p-8 rounded-2xl premium-shadow scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="flex text-amber-500 mb-4">
+                            <!-- 5 Stars -->
+                            <span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span>
+                        </div>
+                        <blockquote class="text-lg italic text-gray-700 mb-6">
+                            "Working with Danielle was the catalyst I needed. I went from feeling overwhelmed and stuck to focused and energized in just six weeks. Truly life-changing."
+                        </blockquote>
+                        <p class="font-semibold text-gray-900">— Alex R.</p>
+                        <p class="text-sm text-violet-600">Product Manager, Tech Startup</p>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="text-left bg-gray-50 p-8 rounded-2xl premium-shadow scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="flex text-amber-500 mb-4">
+                            <!-- 5 Stars -->
+                            <span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span>
+                        </div>
+                        <blockquote class="text-lg italic text-gray-700 mb-6">
+                            "The frameworks Danielle provides are practical and deeply psychological. I finally understood my own limiting beliefs and now feel confident tackling anything."
+                        </blockquote>
+                        <p class="font-semibold text-gray-900">— Sarah K.</p>
+                        <p class="text-sm text-violet-600">VP of Marketing, Global Corp</p>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="text-left bg-gray-50 p-8 rounded-2xl premium-shadow scroll-reveal" style="transition-delay: 0.3s;">
+                        <div class="flex text-amber-500 mb-4">
+                            <!-- 5 Stars -->
+                            <span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span><span role="img" aria-label="star">⭐</span>
+                        </div>
+                        <blockquote class="text-lg italic text-gray-700 mb-6">
+                            "Before ElevateWell, I was burnt out. Now, I have clarity on my career path and confidence in my decisions. The best investment I've made in myself."
+                        </blockquote>
+                        <p class="font-semibold text-gray-900">— Michael B.</p>
+                        <p class="text-sm text-violet-600">Financial Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Booking Section (Calendly Placeholder) -->
+        <section id="booking" class="py-20 md:py-32 bg-indigo-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-reveal">
+                <h2 class="text-3xl sm:text-4xl font-lora font-bold text-gray-900 mb-4">
+                    Ready for Your Next Level?
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Take the first step toward the confident, focused, empowered version of yourself.
+                </p>
+
+                <!-- Calendly Placeholder -->
+                <div class="bg-white p-6 md:p-10 rounded-xl premium-shadow border border-indigo-200">
+                    <h3 class="font-lora text-xl font-semibold text-violet-600 mb-4">
+                        Schedule your free 15-minute consultation
+                    </h3>
+                    <div class="bg-gray-100 h-60 flex items-center justify-center rounded-lg border border-dashed border-gray-300 text-gray-500 italic">
+                        [Calendly Embed Placeholder]
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <a href="#" class="cta-button inline-block mt-8 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-4 px-8 rounded-full text-lg shadow-xl hover:shadow-2xl transition duration-300">
+                    Book Your Free Consultation Slot
+                </a>
+                <p class="mt-3 text-sm text-gray-500 italic">Limited slots available weekly.</p>
+            </div>
+        </section>
+
+        <!-- 8. Final Call-to-Action -->
+        <section class="py-20 md:py-24 bg-gradient-to-r from-violet-600 to-indigo-600">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white scroll-reveal">
+                <h2 class="font-lora text-4xl sm:text-5xl font-bold mb-4">
+                    Your Transformation Starts Now
+                </h2>
+                <p class="text-xl font-light mb-8 opacity-90">
+                    Break cycles. Build confidence. Become who you know you can be.
+                </p>
+                <a href="#booking" class="cta-button inline-block bg-white text-violet-700 font-semibold py-4 px-10 rounded-full text-xl shadow-2xl hover:bg-gray-100 transition duration-300">
+                    Book Your Free Consultation
+                </a>
+                <p class="mt-4 text-sm font-light opacity-75 italic">
+                    Elevate your mindset. Elevate your life.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+                
+                <!-- Logo & Tagline -->
+                <div class="text-center md:text-left">
+                    <a href="#" class="font-lora text-2xl font-bold text-white tracking-wider">ElevateWell</a>
+                    <p class="text-sm mt-2 text-gray-400">Mindset & Personal Development</p>
+                    <p class="text-sm mt-4 font-lora italic text-amber-400">
+                        ElevateWell Coaching — Where Clarity Meets Confidence.
+                    </p>
+                </div>
+
+                <!-- Navigation & Links -->
+                <div class="flex space-x-10 text-sm">
+                    <div class="space-y-2">
+                        <h4 class="font-semibold mb-2">Company</h4>
+                        <a href="#about" class="block text-gray-400 hover:text-white transition duration-150">About</a>
+                        <a href="#programs" class="block text-gray-400 hover:text-white transition duration-150">Programs</a>
+                        <a href="#testimonials" class="block text-gray-400 hover:text-white transition duration-150">Success Stories</a>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold mb-2">Support</h4>
+                        <a href="#" class="block text-gray-400 hover:text-white transition duration-150">FAQ</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition duration-150">Privacy Policy</a>
+                        <a href="#" class="block text-gray-400 hover:text-white transition duration-150">Terms of Service</a>
+                    </div>
+                </div>
+
+                <!-- Social Icons Placeholder -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-violet-400 transition duration-150" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM4 19h4v-7H4v7zM6 4.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-violet-400 transition duration-150" aria-label="Instagram">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2.7a.8.8 0 100 1.6.8.8 0 000-1.6zm8.8 1.4a5 5 0 100 10 5 5 0 000-10zm-2.4 2.5a.8.8 0 110 1.6.8.8 0 010-1.6zM12 9a3 3 0 100 6 3 3 0 000-6z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+                &copy; 2025 ElevateWell Coaching. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript for Scroll Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to handle Intersection Observer logic
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Stop observing once the element is visible
+                        // observer.unobserve(entry.target);
+                    } else {
+                        // Optional: Remove 'active' class when element scrolls out
+                        // entry.target.classList.remove('active');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            });
+
+            // Target all sections and elements with the scroll-reveal class
+            document.querySelectorAll('.scroll-reveal').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
